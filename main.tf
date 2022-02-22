@@ -6,6 +6,13 @@ provider "aws" {
  
 }
 
+variable "TF_AWS_ACCESS_KEY_ID" {
+ 
+}
+
+variable "TF_AWS_SECRET_ACCESS_KEY" {
+ 
+}
 resource "aws_s3_bucket" "statefileterraform" {
     bucket = "statefilestoreterraform" 
 
