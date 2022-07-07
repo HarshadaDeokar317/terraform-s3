@@ -11,9 +11,11 @@ resource "aws_s3_bucket" "statefileterraform" {
     
 }
 
+
+# Display name of the bucket
 output "bucket_name" {
 
-    value = aws_s3_bucket.statefileterraform
+    value = aws_s3_bucket.statefileterraform.id
 
   
 }
